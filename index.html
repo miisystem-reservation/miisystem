@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <title>三井 予約サイト</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    /* ヘッダー */
+    header {
+      background-color: #4285F4;
+      color: white;
+      padding: 20px;
+      text-align: left;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    /* ヘッダー下の説明文 */
+    .description {
+      margin: 20px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    /* カレンダー */
+    iframe {
+      display: block;
+      margin: 20px auto;
+      width: 100%;          /* スマホでは全幅 */
+      max-width: 800px;     /* PCでは最大幅を制限 */
+      height: 600px;
+      border: none;
+    }
+
+    /* ボタン */
+    .form-button {
+      display: inline-block;
+      margin: 20px auto;
+      padding: 15px 30px;
+      background-color: #4285F4;
+      color: white;
+      font-size: 18px;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+    .form-button:hover {
+      background-color: #3367D6;
+    }
+
+    /* スマホ用調整 */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 20px;
+      }
+      .description {
+        font-size: 16px;
+      }
+      .form-button {
+        width: 80%;          /* ボタンを広めに */
+        font-size: 16px;
+      }
+      iframe {
+        height: 400px;       /* 高さを少し縮める */
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- ヘッダー -->
+  <header>
+    <h1>三井 予約サイト</h1>
+  </header>
+
+  <!-- ヘッダー下の説明文 -->
+  <div class="description">
+    三井自治会館と三井地域センターの予約ができます
+  </div>
+
+  <!-- カレンダー -->
+  <section>
+    <iframe src="https://calendar.google.com/calendar/embed?src=08397cd90d1d1318f6eec6d310aab97ac5eb3943b67369bbc416c60f1cf441b4%40group.calendar.google.com&ctz=Asia%2FTokyo"></iframe>
+  </section>
+
+  <!-- フォームボタン -->
+  <section>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSceVuPd7I5IKlGMgrE9pE_uw0exUXej9UZCE7wcUVszGrm_Sw/viewform?usp=dialog" class="form-button">
+      予約をする
+    </a>
+  </section>
+</body>
+</html>
