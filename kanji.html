@@ -39,7 +39,7 @@
 
   <script>
     async function loadReservations() {
-      const response = await fetch("GASのWebアプリURL"); // 公開したdoGetのURL
+      const response = await fetch("https://script.google.com/macros/s/AKfycbx6E8bXMuPANleD_GKD6fvj_w8OIBp9uqCeep1dbJ8XTxA2jt3_3ewjfgQs0ic9ZnB9JQ/exec"); // 公開したdoGetのURL
       const data = await response.json();
 
       const tbody = document.querySelector("#reservationTable tbody");
