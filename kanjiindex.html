@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>三井 予約サイト</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background-color: #4285F4;
+      color: white;
+      padding: 20px;
+      text-align: left;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .description {
+      margin: 20px;
+    }
+
+    iframe {
+      display: block;
+      margin: 20px auto;
+      width: 100%;
+      max-width: 800px;
+      height: 600px;
+      border: none;
+    }
+
+    .form-button {
+      display: inline-block;
+      margin: 20px auto;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+    .form-button img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 8px;
+      transition: opacity 0.3s;
+    }
+    .form-button img:hover {
+      opacity: 0.8;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 20px;
+      }
+      .form-button img {
+        max-width: 80%;
+      }
+      iframe {
+        height: 400px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="My Portfolio">
+  </header>
+
+  <div class="description">
+    <img src="description.png" alt="三井自治会館と三井地域センターの予約ができます" style="max-width:100%; height:auto;">
+  </div>
+
+  <section>
+    <a href="kanji.html" class="form-button">
+      <img src="kanji.png" alt="幹事">
+    </a>
+  </section>
+
+  <section>
+    <a href="mii1.html" class="form-button">
+      <img src="mii1.png" alt="三井自治会館">
+    </a>
+  </section>
+
+  <section>
+    <a href="mii2.html" class="form-button">
+      <img src="mii2.png" alt="三井地域センター">
+    </a>
+  </section>
+
+  <section>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSceVuPd7I5IKlGMgrE9pE_uw0exUXej9UZCE7wcUVszGrm_Sw/viewform?usp=dialog" class="form-button">
+      <img src="reserve-button.png" alt="予約をする">
+    </a>
+  </section>
+</body>
+</html>
